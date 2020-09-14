@@ -6,6 +6,5 @@ function handleRequest(req, res){
     res.end(`you are at ${os.hostname}`);
 }
 
-
 const app = http.createServer(handleRequest);
 app.listen(8200);

@@ -34,6 +34,9 @@ kubectl version
 minikube start --driver=none
 ```
 
+## For SSH into minikube use following command as non root user
+minikube start --driver=docker
+
 ```bash
 kubectl proxy --address='0.0.0.0' --disable-filter=true . &
 minikube dashboard --url=false . &
